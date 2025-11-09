@@ -42,7 +42,7 @@
              animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"></a-sky>
 
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 2 -4">
+      <a-entity id="links" layout="type: line; margin: 1.5" position="-1.5 -1 -4">
         <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
         <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
@@ -59,5 +59,8 @@
           raycaster="objects: .link"></a-cursor>
       </a-entity>
     </a-scene>
+    <div id="brokenNotice" style="position: fixed; top: 0; left: 0; right: 0; background: rgba(30, 30, 30, 0.8); padding: 10px">
+      <p style="font-family: monospace; color: #FAFAFA; text-align: center">v3.0: Update to new beatmap format. Thanks to <a href="https://sidequestvr.com/" style="color: rgb(221,132,195)">Sidequest</a> sponsorship and <a href="https://github.com/redsolver" style="color: rgb(221,132,195)">redsolver</a> technical prowess. Enjoy! Chat with us on moonrider.xyz/discord</p>
+    </div>
   </body>
 </html>
